@@ -6,13 +6,12 @@ function App() {
   return (
     <div>
       <motion.h1
-      animate={{x:300}}
+      initial={{x:300}}
+      animate={{x:0}}
       >
     Hello World
     </motion.h1>
-
-
-    </div>
+ </div>
   )
 }
 
