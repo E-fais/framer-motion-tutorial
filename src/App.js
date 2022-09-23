@@ -5,16 +5,14 @@ import { motion } from 'framer-motion/dist/framer-motion'
 function App() {
   return (
     <div>
-      <motion.h1
-        initial={{ x: 300 , opacity:0}}
-        animate={{ x: 0, opacity:1 }}
-        transition={{
-          type:'spring',
-          stiffness:120
-        }}
+      <motion.button
+       whileHover={{
+        scale:1.1,
+        background:'red'
+      }}
       >
         Hello World
-      </motion.h1>
+      </motion.button>
     </div>
   )
 }
