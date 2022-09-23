@@ -1,14 +1,16 @@
 import React from 'react'
 import './App.css'
+import {motion} from 'framer-motion/dist/framer-motion'
 
 function App() {
   return (
     <div>
-      <h1>
-      Framer Motion Tutorial For Beginners
-    </h1>
-    <h3>Each chapter is saved as seperate branches.
-    </h3>
+      <motion.h1
+      animate={{x:300}}
+      >
+    Hello World
+    </motion.h1>
+
 
     </div>
   )
