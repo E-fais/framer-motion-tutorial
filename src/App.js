@@ -1,17 +1,28 @@
 import React from 'react'
 import './App.css'
-
+import { motion } from 'framer-motion/dist/framer-motion'
 function App() {
-  return (
-    <div>
-      <h1>
-      Framer Motion Tutorial For Beginners
-    </h1>
-    <h3>Each chapter is saved as seperate branches.
-    </h3>
 
-    </div>
-  )
+  const myVariants = {
+      start:{
+    rotateY:120
+      },
+        final:{
+          rotateY:0,
+          transition:{
+            yoyo:Infinity,
+            duration:3
+          }}
+  }
+      return (
+        <div>
+          <motion.h1
+          variants={myVariants}
+          initial='start'
+          animate='final'>
+            YoYo keyframe  
+          </motion.h1>
+        </div>
+      )
 }
-
 export default App
